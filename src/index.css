@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+}
+
+#deslizalogo {
+  animation: myAnim 7s linear 15s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+#planeta {
+  -webkit-animation: flotatierra 5s linear 2s infinite;
+  -moz-animation: flotatierra 5s linear 2s infinite;
+  -o-animation: flotatierra 5s linear 2s infinite;
+  animation: flotatierra 5s linear 2s infinite;
+}
+
+@keyframes flotatierra {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.6rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#asesor {
+  -webkit-animation: flotaasesor 5s linear 2s infinite;
+  -moz-animation: flotaasesor 5s linear 2s infinite;
+  -o-animation: flotaasesor 5s linear 2s infinite;
+  animation: flotaasesor 5s linear 2s infinite;
+}
+
+@keyframes flotaasesor {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-2.6rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#anuncio {
+  animation: rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#continentes {
+  -webkit-animation: flotacontinente 5s linear 2s infinite;
+  -moz-animation: flotacontinente 5s linear 2s infinite;
+  -o-animation: flotacontinente 5s linear 2s infinite;
+  animation: flotacontinente 5s linear 2s infinite;
+}
+
+@keyframes flotacontinente {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-0.8rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#logoZhamat {
+  animation: llegaimpulsado 4.5s both;
+}
+
+@keyframes llegaimpulsado {
+  0% {
+    transform: translate(120%) skewX(-30deg);
+  }
+  70% {
+    transform: translate(0%) skewX(-30deg);
+  }
+  80% {
+    transform: translate(0%) skewX(20deg);
+  }
+  95% {
+    transform: translate(0%) skewX(-10deg);
+  }
+  100% {
+    transform: translate(0%) skewX(0deg);
+  }
+}
+
+#puntoColombia {
+  animation: bounce 300ms alternate infinite cubic-bezier(0.2, 0.25, 0.25, 1);
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
